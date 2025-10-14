@@ -13,27 +13,26 @@
         <legend>My info</legend>
         <div>
           <label for="first_name_field">First name:</label>
-          <input type="text" id="first_name_field" name="First name" placeholder=John required>
+          <input type="text" id="first_name" name="first_name_field" placeholder=John required>
         </div>
         <div>
           <label for="last_name_field">Last name:</label>
-          <input type="text" id="last_name_field" name="Last name" placeholder="Doe" required>
+          <input type="text" id="last_name" name="last_name_field" placeholder="Doe" required>
         </div>
         <div>
           <label for="phone_field">Phone:</label>
-          <input type="tel" id="phone_field" name="phone" placeholder="123-456-7890" required>
+          <input type="tel" id="phone" name="phone_field" placeholder="123-456-7890" required>
         </div>
         <div>
           <label for="email_field">Email:</label> <!--info that goes outside of box-->
-          <input type="email" id="email_field" name="email" placeholder="hello@world" required>
+          <input type="email" id="email" name="email_field" placeholder="hello@world" required>
         </div>
         <div>
-          
-          <input type="radio" id="gender_field" name="Gender" value="Male">
           <label for="gender_field">Male</label>
+          <input type="radio" id="male" name="gender_field" value="Male">
           
-          <input type="radio" id="gender_field" name="Gender" value="Female">
           <label for="gender_field">Female</label>
+          <input type="radio" id="female" name="gender_field" value="Female">
         </div>
         <div>
           <label for="age">Age:</label>
@@ -45,9 +44,41 @@
       </fieldset>
       <fieldset>
         <legend>My Availability</legend>
-        <input type="checkbox" id="Monday" name="available_field[]" value="Monday">
-            <label for="Monday"> Monday</label>
+        <h2>Days Available: </h2>
+        <div>
+          <label for="monday"> Monday</label>
+          <input type="checkbox" id="monday" name="available_field[]" value="Monday">
+            <br>
+          <label for="tuesday"> Tuesday</label>
+          <input type="checkbox" id="tuesday" name="available_field[]" value="Tuesday">
+            <br>
+          <label for="wednesday"> Wednesday</label>
+          <input type="checkbox" id="wednesday" name="available_field[]" value="Wednesday">
+            <br>
+          <label for="thursday"> Thursday</label>
+          <input type="checkbox" id="thursday" name="available_field[]" value="Thursday">
+            <br>
+          <label for="friday"> Friday</label>
+          <input type="checkbox" id="friday" name="available_field[]" value="Friday">
+            <br>
+          <label for="saturday"> Saturday</label>
+          <input type="checkbox" id="saturday" name="available_field[]" value="Saturday">
+            <br>
+          <label for="sunday"> Sunday</label>
+          <input type="checkbox" id="sunday" name="available_field[]" value="Sunday">
+            <br>
+        </div>
+
+        <div>
+          <h2>Comments:</h2>
+          <textarea id="message" name="comments_field" rows="2" cols="20">
+          </textarea>
+        </div>
+        <div>
+          <input type="hidden" name="hidden_field" value="John Vazquez">
+        </div>
       </fieldset>
+    <input type="submit" value="Submit">
   </Form>
 </body>
 </html>
