@@ -12,28 +12,33 @@
       <fieldset>
         <legend>My info</legend>
         <div>
-          <label for="first_name_field">First name:</label>
+          <label for="first_name">First name:</label>
           <input type="text" id="first_name" name="first_name_field" placeholder=John required>
         </div>
+
         <div>
-          <label for="last_name_field">Last name:</label>
-          <input type="text" id="last_name" name="last_name_field" placeholder="Doe" required>
+          <label for="last_name_">Last name:</label>
+          <input type="text" id="last_name_" name="last_name_field" placeholder="Doe" required>
         </div>
+
         <div>
-          <label for="phone_field">Phone:</label>
+          <label for="phone">Phone:</label>
           <input type="tel" id="phone" name="phone_field" placeholder="123-456-7890" required>
         </div>
+
         <div>
-          <label for="email_field">Email:</label> <!--info that goes outside of box-->
+          <label for="email">Email:</label> <!--info that goes outside of box-->
           <input type="email" id="email" name="email_field" placeholder="hello@world" required>
         </div>
+
         <div>
-          <label for="gender_field">Male</label>
+          <label for="male">Male</label>
           <input type="radio" id="male" name="gender_field" value="Male">
           
-          <label for="gender_field">Female</label>
+          <label for="female">Female</label>
           <input type="radio" id="female" name="gender_field" value="Female">
         </div>
+
         <div>
           <label for="age">Age:</label>
             <select id="age" name="age_field">
@@ -42,6 +47,8 @@
             </select>
         </div>
       </fieldset>
+
+
       <fieldset>
         <legend>My Availability</legend>
         <h2>Days Available: </h2>
@@ -74,10 +81,12 @@
           <textarea id="message" name="comments_field" rows="2" cols="20">
           </textarea>
         </div>
+
         <div>
           <input type="hidden" name="hidden_field" value="John Vazquez">
         </div>
       </fieldset>
+
     <input type="submit" value="Submit">
   </Form>
 </body>
